@@ -6,8 +6,8 @@
 title: Mobile App Landing Page Template
 email: contact@sandoche.com
 description: Free to use static landing page template to showcase your mobile app
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sharetoast.app/mobile-landing/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/mobile-landing" # the subpath of your site, e.g. /blog
+url: "https://sharetoast.app" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
 twitter_username: sandochee
 github_username:  sandoche
