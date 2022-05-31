@@ -1,4 +1,4 @@
-name: Build and deploy main
+name: Build and deploy
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
 
 jobs:
   build:
-    name: Build and deploy master
+    name: Build and deploy
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -25,13 +25,13 @@ jobs:
           npm install
           npm run build -- --base=/${{ github.event.repository.name }}/
       - name: Deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.3.3
         with:
           branch: gh-pages
           folder: dist
 
       - name: Publish deployed code 
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: published
           path: dist
