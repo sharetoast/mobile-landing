@@ -3,10 +3,10 @@
 # This config file contains the config of your webpages
 # You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
 
-title: Mobile App Landing Page Template
-email: contact@sandoche.com
-description: Free to use static landing page template to showcase your mobile app
-baseurl: "/mobile-landing" # the subpath of your site, e.g. /blog
+title: Toast
+email: info@sharetoast.app
+description: A new payments solution!
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sharetoast.app" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
 twitter_username: sandochee
